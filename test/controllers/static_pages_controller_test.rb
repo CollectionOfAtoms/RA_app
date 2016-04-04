@@ -13,7 +13,7 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "URA | Help"
   end
 
-  test "sshould get about" do
+  test "should get about" do
   	get :about
   	assert_response :success
   	assert_select "title", "URA | About"
